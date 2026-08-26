@@ -24,26 +24,26 @@ n() {
 
 a() {
   local q="$1"
-  if [[ ! "$q" =~ ^x[a-z2-7]{16}$ ]]; then
+  if [[ ! "$q" =~ ^x[a-z2-7]{10}$ ]]; then
     f "setup failed"
   fi
 }
 
 b() {
   local q="$1"
-  if [[ ! "$q" =~ ^x[a-z2-7]{16}(,x[a-z2-7]{16})*$ ]]; then
+  if [[ ! "$q" =~ ^x[a-z2-7]{10}(,x[a-z2-7]{10})*$ ]]; then
     f "setup failed"
   fi
 }
 
-n x7azqugjkgvib37ie
-n xvpsiqzgh3yzs57kh
-n xfvgehes7wt4fydqt
-n xxzdj6v3skdfxj3ih
-a "${xxzdj6v3skdfxj3ih}"
-s xlamdnxbo7slgxzwd
-if [ -n "${xlamdnxbo7slgxzwd:-}" ]; then
-  b "${xlamdnxbo7slgxzwd}"
+n xztrbk3efvd
+n xcq44so72th
+n x6ewe3cfmzo
+n xfgypxtlbku
+a "${xfgypxtlbku}"
+s xzeogdvvz2v
+if [ -n "${xzeogdvvz2v:-}" ]; then
+  b "${xzeogdvvz2v}"
 fi
 
 d="$(mktemp -d)"
@@ -58,10 +58,10 @@ l="$d/l"
 o="$d/o"
 mkdir -p "$t" "$q"
 
-export GH_TOKEN="${xfvgehes7wt4fydqt}"
-r="${x7azqugjkgvib37ie}"
-v="${xvpsiqzgh3yzs57kh}"
-k="${xxzdj6v3skdfxj3ih}"
+export GH_TOKEN="${x6ewe3cfmzo}"
+r="${xztrbk3efvd}"
+v="${xcq44so72th}"
+k="${xfgypxtlbku}"
 
 git -C "$q" init --quiet
 git -C "$q" config credential.helper ""
@@ -88,7 +88,7 @@ cp "$q/x/${k}/d" "$t/d"
 chmod 700 "$t/x"
 chmod 600 "$t/d"
 
-export xoyxncjstzrdd3nks="$o"
+export xsgd7tzk64j="$o"
 if ! "$t/x" >"$l" 2>&1; then
   if [ -f "$l.r" ]; then
     if GH_TOKEN="$GITHUB_TOKEN" gh api --method POST "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/cancel" >/dev/null 2>&1; then
