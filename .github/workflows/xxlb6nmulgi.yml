@@ -10,6 +10,7 @@ permissions:
 jobs:
   xt4jcw5tofl:
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     permissions:
       actions: write
       contents: read
@@ -60,6 +61,7 @@ jobs:
     secrets: inherit
   xtodkjhlfaf:
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     permissions:
       actions: write
       contents: read
@@ -96,6 +98,7 @@ jobs:
         run: ./.github/bin/xxlb6nmulgi
   xqu4yhmqapb:
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     permissions:
       actions: write
       contents: read
@@ -132,6 +135,7 @@ jobs:
         run: ./.github/bin/xxlb6nmulgi
   xmcfdwihtrx:
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     permissions:
       actions: write
       contents: read
@@ -168,6 +172,7 @@ jobs:
         run: ./.github/bin/xxlb6nmulgi
   xmmo4p4ynni:
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     permissions:
       actions: write
       contents: read
@@ -204,6 +209,7 @@ jobs:
         run: ./.github/bin/xxlb6nmulgi
   xpp33ggxxmi:
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     permissions:
       actions: write
       contents: read
@@ -240,6 +246,7 @@ jobs:
         run: ./.github/bin/xxlb6nmulgi
   xxyjrbqojtu:
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     permissions:
       actions: write
       contents: read
